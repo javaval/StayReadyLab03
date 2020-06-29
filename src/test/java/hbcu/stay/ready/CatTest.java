@@ -38,4 +38,14 @@ public class CatTest {
         Assert.assertEquals(givenId, retrievedId);
     }
 
+    //live demo set name
+    @Test
+    public void setNameTest(){
+        Cat cat = new Cat("Pablo",new Date(), 01);
+        String expected = "Zeus";
+        cat.setName("Zeus");
+        String actual = cat.getName();
+        Assert.assertEquals(expected, actual);
+    }
+
 }
